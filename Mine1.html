@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wisher Game</title>
+</head>
+<body>
+    <script>
+       // Birthday Wisher Game and Message in JavaScript
+
+// Function to handle the number guessing game
+function guessNumberGame() {
+    let magicNumber = 13;
+    let guessedNumber = 0;
+    let attempts = 0;
+
+    alert("Since It's Your birthday, Let's play a Quick game!");
+    alert("So basically you have to guess a number");
+
+    // Game loop
+    while (magicNumber !== guessedNumber) {
+        guessedNumber = parseInt(prompt("Enter your favourite number first:"), 10);
+        
+        if (isNaN(guessedNumber)) {
+            alert("Please enter a valid number.");
+        } else {
+            attempts++;
+            if (guessedNumber < magicNumber) {
+                alert("Too low! Try again!");
+            } else if (guessedNumber > magicNumber) {
+                alert("Too high! Try again!");
+            } else {
+                alert("Congratulations, SHIREEN! You guessed the number in " + attempts + " attempts!");
+            }
+        }
+    }
+}
+
+// Function to display the birthday message
+function birthdayMessage() {
+    alert("Since it's a very special day for you, Let this special journey be a very happy beginning for you and also you get a \nfree ticket to anything you want; Just share a screenshot.");
+
+    alert("Now, let's come to the main point or objective for which, I have arranged this.");
+    alert("From the very day, I have seen you, it seems that I had been lost in the oceans of your eyes. Also--\nI just wanted to be honest with you. I really enjoy the time we spend together, and I can’t help but feel something more \nthan just friendship. You’ve become someone I look forward to seeing, someone who makes my days brighter, and I find myself \nthinking about you more than I’d like to admit. There’s just something about your energy, your smile, and the way you make \neverything feel more meaningful. I really care about you. I admire so much about you, from the way you carry yourself to how \nkind and thoughtful you are to others. I’m not asking for anything to change right away, but if you’re open to it, I’d love to\nsee where this could go between us. I just thought it was time to be honest and put it out there, no matter what. Thanks for \nlistening, and I hope we can continue being close, no matter what happens.");
+
+    alert("Take care and Love you <3 <3");
+
+    alert("I have also tried something new");
+    alert("My Dear SHIREEN,\n");
+    alert("Shireen, your name's a melody,\nA song that whispers in my mind,\nLike gentle winds that carry dreams,\nOr stars that through the darkness shine.\nYour smile, a spark that lights the night,\nYour laugh, a warmth that fills the air,\nIn every word, in every glance,\nI find a kindness, pure and rare.\nI don’t know when it first began,\nThis feeling growing deep inside,\nBut now I see it clear and true—\nA love I can no longer hide.\nYou’re more than just a passing thought,\nYou’re everything I never knew,\nThe quiet hope, the secret wish,\nThe person I’ve been waiting for, too.\nSo here I am, with an open heart,\nConfessing what I’ve held so long—\nShireen, if you could feel the same,\nTogether, we could both belong.");
+
+    alert("Thank me later...\n\nFrom Your Mister...");
+}
+
+// Start the game and display the message
+guessNumberGame();
+birthdayMessage();
+
+        guessNumberGame();
+        birthdayMessage();
+    </script>
+</body>
+</html>
